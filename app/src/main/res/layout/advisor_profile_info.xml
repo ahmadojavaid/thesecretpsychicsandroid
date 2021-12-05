@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whitess"
+    tools:context=".AdvisorActivities.AdvisorProfileSetup">
+
+    <include layout="@layout/toolbar_with_back_white" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_below="@+id/toolbar"
+        android:orientation="vertical">
+
+        <customfonts.textview_fira_sans_regular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_15sdp"
+            android:gravity="center"
+            android:text="@string/descriptive_info"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp" />
+
+        <customfonts.edittext_fira_sans_light
+            android:id="@+id/service_description_et"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_150sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:background="@drawable/edittext_login"
+            android:gravity="left"
+            android:hint="@string/service_description"
+            android:imeOptions="actionDone"
+            android:inputType="textMultiLine"
+            android:padding="@dimen/_8sdp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textColorHint="@color/border_color"
+            android:textSize="@dimen/et_text_size" />
+
+        <customfonts.edittext_fira_sans_light
+            android:id="@+id/about_et"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_150sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:background="@drawable/edittext_login"
+            android:gravity="left"
+            android:hint="@string/about_me"
+            android:imeOptions="actionDone"
+            android:inputType="textMultiLine"
+            android:padding="@dimen/_8sdp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textColorHint="@color/border_color"
+            android:textSize="@dimen/et_text_size" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/next_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@drawable/rounded_blue"
+        android:gravity="center">
+
+        <customfonts.textview_fira_sans_regular
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/next_title_case"
+            android:textColor="@color/whitess"
+            android:textSize="@dimen/_14sdp" />
+
+        <ImageView
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:src="@drawable/btn_smile" />
+    </LinearLayout>
+
+</RelativeLayout>

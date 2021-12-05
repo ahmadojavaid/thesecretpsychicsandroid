@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="right">
+
+
+            <ImageView
+                android:id="@+id/chat_img"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/_3sdp"
+                android:src="@drawable/ic_chat_green" />
+
+
+            <customfonts.textview_fira_sans_regular
+                android:id="@+id/chat_counter_tv"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_gravity="right|top"
+                android:background="@drawable/circle_pure_red"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textSize="@dimen/_9sdp"
+                android:visibility="gone" />
+
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/imageViewHeader"
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="@dimen/_90sdp"
+            android:contentDescription="@string/nav_header_desc"
+            android:padding="5dp"
+            android:src="@drawable/user_image_general_info" />
+
+        <customfonts.textview_fira_sans_bold
+            android:id="@+id/userNameHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="@dimen/nav_header_vertical_spacing"
+
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#0074CD"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="#0074CD">
+
+        </View>
+    </LinearLayout>
+</LinearLayout>

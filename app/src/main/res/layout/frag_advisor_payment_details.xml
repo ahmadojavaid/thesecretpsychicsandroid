@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whitess"
+    tools:context=".AdvisorActivities.AdvisorProfileSetup">
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <customfonts.textview_fira_sans_regular
+                    android:id="@+id/pMin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/video_reading"
+                    android:textColor="@color/gray_text_payment_screen"
+                    android:textSize="@dimen/et_text_size" />
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+
+                android:layout_marginRight="@dimen/_10sdp"
+                android:background="@drawable/edittext_login"
+                android:orientation="horizontal">
+
+                <customfonts.textview_fira_sans_light
+                    android:id="@+id/rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:gravity="center"
+                    android:text="£/Reading"
+                    android:textSize="@dimen/et_text_size" />
+
+                <View
+                    android:id="@+id/vertical"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/rate"
+                    android:background="@color/grey_light" />
+
+                <customfonts.edittext_fira_sans_light
+                    android:id="@+id/time_rate_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@+id/text_min_hint"
+                    android:layout_toRightOf="@+id/vertical"
+                    android:background="@null"
+                    android:gravity="left|center"
+                    android:inputType="numberDecimal"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:text="9.99"
+                    android:textColor="@color/gray_text_payment_screen"
+                    android:textSize="@dimen/et_text_size" />
+
+                <customfonts.textview_fira_sans_light
+                    android:id="@+id/text_min_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:text="@string/fixed_rate"
+                    android:textColor="@color/border_color"
+                    android:textSize="@dimen/et_text_size" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <customfonts.textview_fira_sans_bold
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="@string/you_will_earn_4_pounds"
+                    android:textSize="@dimen/_13sdp" />
+
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/chat"
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@color/border_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp">
+
+                <customfonts.textview_fira_sans_regular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="@string/text_chat_rate"
+                    android:textSize="@dimen/et_text_size" />
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:background="@drawable/edittext_login">
+
+                <customfonts.textview_fira_sans_light
+                    android:id="@+id/session"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:padding="@dimen/_10sdp"
+                    android:text="£/session"
+                    android:textSize="@dimen/et_text_size" />
+
+                <View
+                    android:id="@+id/line2"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/session"
+                    android:background="@color/grey_light" />
+
+                <customfonts.edittext_fira_sans_light
+                    android:id="@+id/text_chat_rate_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/line2"
+                    android:background="@null"
+                    android:digits="0123456789."
+                    android:hint="0.00"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberDecimal"
+                    android:maxLength="7"
+                    android:padding="@dimen/_10sdp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/et_text_size" />
+
+
+            </RelativeLayout>
+
+            <customfonts.textview_fira_sans_bold
+                android:id="@+id/chat_rate_disCount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+
+                android:textSize="@dimen/_13sdp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@color/border_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp"
+                android:visibility="gone">
+
+                <customfonts.textview_fira_sans_regular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="@string/get_paid"
+                    android:textSize="@dimen/et_text_size" />
+
+                <customfonts.textview_fira_sans_light
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enter your Bank Account Details to be paid through us via eomthing that is out of thw box"
+                    android:textSize="@dimen/et_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp">
+
+                <customfonts.textview_fira_sans_regular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/legal_name_of_individual"
+                    android:textSize="@dimen/et_text_size" />
+
+                <customfonts.edittext_fira_sans_light
+                    android:id="@+id/name_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/edittext_login"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                    android:hint="@string/legal_name"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:padding="@dimen/_10sdp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/_12sdp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp">
+
+                <customfonts.textview_fira_sans_regular
+                    android:id="@+id/dob"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/date_of_birth"
+                    android:textSize="@dimen/et_text_size"
+
+                    />
+
+                <LinearLayout
+                    android:id="@+id/dob1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:orientation="horizontal">
+
+                    <customfonts.edittext_fira_sans_light
+                        android:id="@+id/day_et"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/dob"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittext_login"
+                        android:digits="123456789"
+                        android:hint="@string/day"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:maxLength="2"
+                        android:padding="@dimen/_5sdp"
+                        android:singleLine="true"
+                        android:textSize="@dimen/et_text_size" />
+
+                    <customfonts.edittext_fira_sans_light
+                        android:id="@+id/month_et"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/dob"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittext_login"
+                        android:digits="123456789"
+                        android:hint="@string/month"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:maxLength="2"
+                        android:padding="@dimen/_5sdp"
+                        android:singleLine="true"
+                        android:textSize="@dimen/et_text_size" />
+
+                    <customfonts.edittext_fira_sans_light
+                        android:id="@+id/year_et"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/dob"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittext_login"
+                        android:digits="123456789"
+                        android:hint="@string/year"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:padding="@dimen/_5sdp"
+                        android:singleLine="true"
+                        android:textSize="@dimen/et_text_size" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp">
+
+                <customfonts.textview_fira_sans_regular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:text="@string/country"
+                    android:textSize="@dimen/et_text_size" />
+
+                <customfonts.edittext_fira_sans_light
+                    android:id="@+id/country_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_login"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                    android:hint="@string/country"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:padding="@dimen/_10sdp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/et_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                android:padding="@dimen/_10sdp">
+
+                <customfonts.textview_fira_sans_regular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:text="@string/permanent_address"
+                    android:textSize="@dimen/et_text_size" />
+
+                <customfonts.edittext_fira_sans_light
+                    android:id="@+id/address_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_login"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ,.-/0123456789"
+                    android:hint="@string/permanent_address"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:padding="@dimen/_10sdp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/et_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/_10sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <customfonts.textview_fira_sans_regular
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:text="@string/zip_code"
+                        android:textSize="@dimen/et_text_size" />
+
+                    <customfonts.edittext_fira_sans_light
+                        android:id="@+id/zipcode_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittext_login"
+                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+                        android:hint="@string/zip_code"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:padding="@dimen/_10sdp"
+                        android:singleLine="true"
+                        android:textSize="@dimen/et_text_size" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <customfonts.textview_fira_sans_regular
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:text="@string/city"
+                        android:textSize="@dimen/et_text_size" />
+
+                    <customfonts.edittext_fira_sans_light
+                        android:id="@+id/city_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittext_login"
+                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                        android:hint="@string/city"
+                        android:imeOptions="actionDone"
+                        android:inputType="text"
+                        android:padding="@dimen/_10sdp"
+                        android:singleLine="true"
+                        android:textSize="@dimen/et_text_size" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+
+                android:background="@color/border_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp">
+
+
+                <customfonts.textview_fira_sans_regular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:text="@string/paypal_account_details"
+                    android:textSize="@dimen/et_text_size" />
+
+                <customfonts.edittext_fira_sans_light
+                    android:id="@+id/bank_details_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/edittext_login"
+                    android:hint="@string/paypal_email"
+                    android:imeOptions="actionDone"
+                    android:inputType="textEmailAddress"
+                    android:padding="@dimen/_10sdp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/et_text_size" />
+
+                <customfonts.textview_fira_sans_light
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="@string/payment_details_text"
+                    android:textSize="@dimen/et_text_size" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+
+                android:background="@color/border_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                android:padding="@dimen/_10sdp">
+
+                <customfonts.textview_fira_sans_regular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:text="@string/payment_threshold"
+                    android:textSize="@dimen/et_text_size" />
+
+                <customfonts.edittext_fira_sans_light
+                    android:id="@+id/threshold_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_login"
+                    android:hint="£ 50.00"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberDecimal"
+                    android:padding="@dimen/_10sdp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/et_text_size" />
+
+                <customfonts.textview_fira_sans_light
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="@string/payment_threshold_text"
+                    android:textSize="@dimen/et_text_size" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/next_btn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@drawable/rounded_blue"
+                android:gravity="center">
+
+                <customfonts.textview_fira_sans_regular
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/next_title_case"
+                    android:textColor="@color/whitess"
+                    android:textSize="@dimen/_14sdp" />
+
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:src="@drawable/btn_smile" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

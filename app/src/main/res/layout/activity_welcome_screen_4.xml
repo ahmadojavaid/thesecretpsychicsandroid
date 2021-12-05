@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+
+    tools:context=".SplashScreen.WelcomeScreen_1">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/upperContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <ImageView
+                android:layout_width="@dimen/icon_size_blue"
+                android:layout_height="@dimen/icon_size_blue"
+                android:layout_weight="1"
+
+                android:padding="10dp"
+                android:src="@drawable/relationshipcoaching" />
+
+            <ImageView
+                android:layout_width="@dimen/icon_size_blue"
+                android:layout_height="@dimen/icon_size_blue"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:src="@drawable/astrology_horoscopes" />
+
+            <ImageView
+                android:layout_width="@dimen/icon_size_blue"
+                android:layout_height="@dimen/icon_size_blue"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:src="@drawable/dreamanalysis" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/second_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/upperContainer"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <ImageView
+                android:layout_width="@dimen/icon_size_blue"
+                android:layout_height="@dimen/icon_size_blue"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:src="@drawable/tarrotreadings" />
+
+            <ImageView
+                android:layout_width="@dimen/icon_size_blue"
+                android:layout_height="@dimen/icon_size_blue"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:src="@drawable/psychicreadings" />
+
+            <ImageView
+                android:layout_width="@dimen/icon_size_blue"
+                android:layout_height="@dimen/icon_size_blue"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:src="@drawable/angelinsights" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_above="@+id/getMEStart"
+            android:layout_below="@+id/second_container"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <customfonts.textview_fira_sans_bold
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:gravity="center"
+                android:text="@string/title"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_30sdp"
+                android:textStyle="bold" />
+
+            <customfonts.textview_fira_sans_bold
+                android:id="@+id/titles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="psychic advisors"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_17sdp"
+                android:textStyle="bold" />
+
+            <customfonts.textview_fira_sans_light
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:gravity="center"
+                android:text="@string/advisors"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_11sdp" />
+
+            <customfonts.textview_fira_sans_light
+                android:id="@+id/descriptions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="right for you"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_11sdp" />
+
+
+            <customfonts.textview_fira_sans_light
+                android:id="@+id/over_18_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/you_must_be_over_18_txt"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_11sdp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/getMEStart"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_40sdp"
+            android:background="@drawable/rounded_blue"
+            android:gravity="center">
+
+
+            <customfonts.textview_fira_sans_regular
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/get_me_started"
+                android:textColor="@color/whitess"
+                android:textSize="@dimen/_14sdp" />
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:background="@drawable/btn_smile" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

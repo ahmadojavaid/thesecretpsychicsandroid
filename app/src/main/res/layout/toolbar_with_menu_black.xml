@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/action_bar_height"
+    android:background="@color/black">
+
+
+    <ImageView
+        android:id="@+id/menu_img"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:padding="@dimen/_15sdp"
+        android:src="@drawable/ic_menu"
+        android:tint="@color/whitess" />
+
+    <ImageView
+        android:id="@+id/filter_img"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:padding="@dimen/_15sdp"
+        android:src="@drawable/ic_filter_my_orders"
+        android:tint="@color/whitess"
+        android:visibility="gone" />
+
+    <customfonts.textview_fira_sans_regular
+        android:id="@+id/toolbar_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/whitess"
+        android:textSize="@dimen/action_bar_text_size"
+        android:textStyle="bold"
+
+        />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:padding="12dp"
+        android:visibility="gone" />
+
+
+
+
+
+
+</RelativeLayout>

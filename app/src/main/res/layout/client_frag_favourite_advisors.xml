@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/toolbar_with_menu_black"></include>
+
+
+    <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:scrollbars="none"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/no_data_contianer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:visibility="gone">
+
+
+        <ImageView
+            android:id="@+id/smile_img"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_no_orders"
+            android:tint="@color/whitess" />
+
+        <customfonts.textview_fira_sans_regular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/smile_img"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:gravity="center"
+            android:text="@string/no_fav_advisors_text"
+            android:textColor="@color/whitess"
+            android:textSize="@dimen/_14sdp" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+
+    android:orientation="vertical"
+    tools:context=".SplashScreen.WelcomeScreen_5">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_container"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="@dimen/_130sdp"
+            android:layout_height="@dimen/_130sdp"
+            android:src="@drawable/mobile_save_distr" />
+
+        <LinearLayout
+            android:id="@+id/upperContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <ImageView
+                android:layout_width="@dimen/icon_size_blue"
+                android:layout_height="@dimen/icon_size_blue"
+                android:layout_weight="1"
+
+                android:padding="10dp"
+                android:src="@drawable/relationshipcoaching" />
+
+            <ImageView
+                android:layout_width="@dimen/icon_size_blue"
+                android:layout_height="@dimen/icon_size_blue"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:src="@drawable/astrology_horoscopes" />
+
+            <ImageView
+                android:layout_width="@dimen/icon_size_blue"
+                android:layout_height="@dimen/icon_size_blue"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:src="@drawable/dreamanalysis" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/second_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <ImageView
+                android:layout_width="@dimen/icon_size_blue"
+                android:layout_height="@dimen/icon_size_blue"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:src="@drawable/tarrotreadings" />
+
+            <ImageView
+                android:layout_width="@dimen/icon_size_blue"
+                android:layout_height="@dimen/icon_size_blue"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:src="@drawable/psychicreadings" />
+
+            <ImageView
+                android:layout_width="@dimen/icon_size_blue"
+                android:layout_height="@dimen/icon_size_blue"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:src="@drawable/angelinsights" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/bottom_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <customfonts.textview_fira_sans_regular
+            android:id="@+id/client_tv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@drawable/rounded_blue"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/i_am_client"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp" />
+
+        <customfonts.textview_fira_sans_regular
+            android:id="@+id/advisor_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/apply_to_be_advisor"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

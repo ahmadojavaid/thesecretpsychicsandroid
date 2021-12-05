@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">VideoTrimmerLibrary</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="short_seconds">sec</string>
+    <string name="megabyte">MB</string>
+    <string name="kilobyte">KB</string>
+    <string name="video_size_with_colon">Video Size:</string>
+    <string name="triming_Frame_length">Triming Frame Length:</string>
+    <string name="video_size_limit">Video length should be under 3 mins.</string>
+</resources>

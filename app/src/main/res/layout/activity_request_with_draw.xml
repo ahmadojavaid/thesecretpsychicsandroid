@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whitess"
+    tools:context=".AdvisorActivities.RevenueListActivity">
+
+    <include layout="@layout/toolbar_with_back_black" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+
+        <customfonts.textview_fira_sans_regular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/with_draw_balance_to"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold" />
+
+        <customfonts.textview_fira_sans_regular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/_2sdp"
+            android:text="yourgivenemail@company.com"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:background="#F5F5F5">
+
+
+            <ImageView
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:src="@drawable/ic_paypal" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <customfonts.textview_fira_sans_regular
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_33sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_12sdp"
+        android:background="@drawable/rounded_blue"
+        android:gravity="center"
+        android:text="@string/request_withdral"
+        android:textColor="@color/whitess"
+        android:textSize="@dimen/_12sdp" />
+
+
+</RelativeLayout>

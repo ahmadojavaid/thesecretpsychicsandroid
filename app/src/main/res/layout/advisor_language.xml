@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar_with_back_white" />
+
+
+    <LinearLayout
+        android:id="@+id/upperContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <customfonts.textview_fira_sans_regular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:text="Select Your Language:"
+            android:textColor="@color/background"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/languge_btn_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <customfonts.textview_fira_sans_regular
+                android:id="@+id/english_tv"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:background="@drawable/english_btn_blue"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/english"
+                android:textColor="@color/whitess" />
+
+            <customfonts.textview_fira_sans_regular
+                android:id="@+id/espanol_tv"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:background="@drawable/esponal_btn_gray"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/espanol" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <customfonts.textview_fira_sans_light
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/upperContainer"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:gravity="center"
+        android:text="@string/language_txt"
+        android:textSize="@dimen/_12sdp"
+
+        />
+
+
+    <customfonts.textview_fira_sans_regular
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/next_tv"
+        android:gravity="center"
+        android:padding="@dimen/_15sdp"
+        android:text="@string/paypal_account_have"
+        android:textColor="#ff0000" />
+
+    <LinearLayout
+        android:id="@+id/next_tv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@drawable/rounded_blue"
+        android:gravity="center">
+
+        <customfonts.textview_fira_sans_regular
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/next_title_case"
+            android:textColor="@color/whitess"
+            android:textSize="@dimen/_14sdp" />
+
+        <ImageView
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:src="@drawable/btn_smile" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whitess">
+
+    <include layout="@layout/toolbar_with_menu_black"></include>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+
+            <customfonts.textview_fira_sans_bold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:gravity="center"
+                android:text="@string/have_a_promo_code"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold" />
+
+            <customfonts.edittext_fira_sans_light
+                android:id="@+id/promo_code_et"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/edittext_login"
+                android:drawablePadding="@dimen/_10sdp"
+                android:hint="@string/promo_code_label"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:maxLength="9"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:singleLine="true"
+                android:text=""
+                android:textSize="@dimen/_13sdp" />
+
+            <customfonts.textview_fira_sans_regular
+                android:id="@+id/message_tv_promo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:text="@string/topup_packs"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/_13sdp" />
+
+            <customfonts.textview_fira_sans_regular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="@string/topup_packs"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/_13sdp" />
+
+            <customfonts.textview_fira_sans_regular
+
+                android:id="@+id/five_pound_tv"
+
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/rounded_blue"
+                android:gravity="center"
+                android:text="@string/five_pound_credit"
+
+                android:textColor="@color/whitess"
+                android:textSize="@dimen/et_text_size" />
+
+            <customfonts.textview_fira_sans_regular
+                android:id="@+id/ten_pound_tv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/rounded_blue"
+                android:gravity="center"
+                android:text="@string/ten_pound_credit"
+
+                android:textColor="@color/whitess"
+                android:textSize="@dimen/et_text_size" />
+
+            <customfonts.textview_fira_sans_regular
+                android:id="@+id/fifteen_pound_tv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/rounded_blue"
+                android:gravity="center"
+                android:text="@string/fifteen_pound_credit"
+                android:textColor="@color/whitess"
+                android:textSize="@dimen/et_text_size" />
+
+
+            <customfonts.textview_fira_sans_regular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="@string/featured_package"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/_13sdp" />
+
+            <customfonts.textview_fira_sans_regular
+                android:id="@+id/fifty_pound_tv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/rounded_gray"
+                android:gravity="center"
+                android:text="@string/fifty_pound_credit"
+                android:textColor="@color/whitess"
+                android:textSize="@dimen/et_text_size" />
+
+
+            <customfonts.textview_fira_sans_regular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:gravity="center"
+
+                android:text="@string/five_pound_bonus"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/_13sdp" />
+
+            <customfonts.textview_fira_sans_regular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/value_package"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/_13sdp" />
+
+            <customfonts.textview_fira_sans_regular
+                android:id="@+id/hundred_pound_tv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/rounded_gray"
+                android:gravity="center"
+                android:text="@string/hundred_pound_credit"
+                android:textColor="@color/whitess"
+                android:textSize="@dimen/et_text_size" />
+
+
+            <customfonts.textview_fira_sans_regular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:gravity="center"
+                android:text="@string/ten_pound_bonus"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/_13sdp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

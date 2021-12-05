@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar_with_menu_black"></include>
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+
+            android:visibility="gone" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/no_data_contianer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:visibility="gone">
+
+
+        <ImageView
+            android:id="@+id/smile_img"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_no_orders" />
+
+        <customfonts.textview_fira_sans_regular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/smile_img"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:gravity="center"
+            android:text="@string/no_order_text"
+            android:textSize="@dimen/_14sdp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/right_toolbar_container"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentRight="true"
+        android:background="@color/black">
+
+
+        <Spinner
+            android:id="@+id/spinner_titles"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@color/white" />
+
+
+        <Spinner
+            android:id="@+id/spinner_days"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_below="@+id/spinner_titles"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@color/white" />
+
+
+        <customfonts.textview_fira_sans_regular
+            android:id="@+id/apply_tv"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:background="@drawable/rounded_green"
+            android:gravity="center"
+            android:text="@string/apply"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

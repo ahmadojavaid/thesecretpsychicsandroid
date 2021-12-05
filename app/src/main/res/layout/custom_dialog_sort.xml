@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp">
+
+        <customfonts.textview_fira_sans_regular
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/sort_by"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp" />
+
+        <ImageView
+            android:layout_width="@dimen/_40sdp"
+            android:id="@+id/closeAlert_img"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/_14sdp"
+            android:src="@drawable/ic_close"
+            android:tint="@color/blue" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/blue" />
+
+    </RelativeLayout>
+
+    <customfonts.textview_fira_sans_regular
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:id="@+id/userRatting_tv"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/user_ratting"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/_12sdp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/blue" />
+
+    <customfonts.textview_fira_sans_regular
+        android:layout_width="match_parent"
+        android:id="@+id/price_low_to_high"
+        android:layout_height="@dimen/_40sdp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/price_per_min"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/_12sdp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/blue" />
+
+    <customfonts.textview_fira_sans_regular
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:id="@+id/price_high_to_low"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/price_per_min_2"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/_12sdp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/blue" />
+
+    <customfonts.textview_fira_sans_regular
+        android:id="@+id/no_of_reviews_tv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/no_of_reviews"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/_12sdp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/blue" />
+</LinearLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical">
+
+    <customfonts.textview_fira_sans_regular
+        android:id="@+id/signUp_tv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:background="@drawable/rounded_blue"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:text="@string/enter"
+
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_14sdp" />
+
+
+    <LinearLayout
+        android:id="@+id/btnFacebook"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@drawable/edittext_login"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:src="@drawable/ic_fb"
+            android:tint="@color/blue" />
+
+        <customfonts.textview_fira_sans_regular
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:text="@string/signup_fb"
+            android:textAllCaps="false"
+            android:textColor="#3B5998"
+            android:textSize="@dimen/_14sdp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/btnGoogle"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@drawable/edittext_login"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:src="@drawable/ic_google_plus" />
+
+        <customfonts.textview_fira_sans_regular
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:text="@string/signup_google"
+            android:textAllCaps="false"
+            android:textColor="#F34A38"
+            android:textSize="@dimen/_14sdp" />
+
+
+        <!--<Button-->
+        <!---->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/_40sdp"-->
+
+        <!--android:background="@drawable/button_facebook"-->
+        <!--android:drawableLeft="@drawable/google_plus"-->
+        <!--android:fontFamily="sans-serif-condensed"-->
+        <!--android:text="Sign up with Google+"-->
+        <!--android:textAllCaps="false"-->
+        <!--android:textColor="#DC472E"-->
+
+        <!--android:textSize="@dimen/_18sdp" />-->
+    </LinearLayout>
+</LinearLayout>

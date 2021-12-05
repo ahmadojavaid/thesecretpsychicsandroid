@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+
+    <customfonts.textview_fira_sans_regular
+        android:id="@+id/home_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="@dimen/_8sdp"
+        android:text="@string/home"
+        android:textColor="@color/white"
+        android:textSize="@dimen/drawer_textview_size" />
+
+    <customfonts.textview_fira_sans_regular
+        android:id="@+id/categories_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="@dimen/_8sdp"
+        android:text="@string/categories"
+        android:textColor="@color/white"
+        android:textSize="@dimen/drawer_textview_size" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|top">
+
+        <customfonts.textview_fira_sans_regular
+            android:id="@+id/my_orders_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="@dimen/_8sdp"
+            android:text="@string/my_orders"
+            android:textColor="@color/white"
+            android:textSize="@dimen/drawer_textview_size" />
+
+        <ImageView
+            android:id="@+id/jobs_dot_img"
+            android:layout_width="@dimen/_10sdp"
+            android:layout_height="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:src="@drawable/circle_pure_red"
+            android:visibility="gone" />
+    </LinearLayout>
+
+
+    <customfonts.textview_fira_sans_regular
+        android:id="@+id/favourite_advisor_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="@dimen/_8sdp"
+        android:text="@string/favourite_advisor"
+        android:textColor="@color/white"
+        android:textSize="@dimen/drawer_textview_size" />
+
+    <customfonts.textview_fira_sans_regular
+        android:id="@+id/credit_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="@dimen/_8sdp"
+        android:text="@string/credit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/drawer_textview_size" />
+
+
+    <customfonts.textview_fira_sans_regular
+        android:id="@+id/cashback_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="@dimen/_8sdp"
+        android:text="@string/cashback_title"
+        android:textColor="@color/white"
+        android:textSize="@dimen/drawer_textview_size"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:background="@color/blue"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <customfonts.textview_fira_sans_regular
+            android:id="@+id/invite_friends_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="@dimen/_8sdp"
+            android:text="@string/invite_friends"
+            android:textColor="@color/white"
+            android:textSize="@dimen/drawer_textview_size" />
+
+        <customfonts.textview_fira_sans_regular
+            android:id="@+id/rate_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="@dimen/_8sdp"
+            android:text="@string/rate_us"
+            android:textColor="@color/white"
+            android:textSize="@dimen/drawer_textview_size">
+
+        </customfonts.textview_fira_sans_regular>
+
+        <customfonts.textview_fira_sans_regular
+            android:id="@+id/promo_code_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="@dimen/_8sdp"
+            android:text="@string/promo_code"
+            android:textColor="@color/white"
+            android:textSize="@dimen/drawer_textview_size"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="#0074CD"></View>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <customfonts.textview_fira_sans_regular
+            android:id="@+id/language_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="@dimen/_8sdp"
+            android:text="@string/language"
+            android:textColor="@color/white"
+            android:textSize="@dimen/drawer_textview_size" />
+
+        <customfonts.textview_fira_sans_regular
+            android:id="@+id/customer_support_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="@dimen/_8sdp"
+            android:text="@string/customer_support"
+            android:textColor="@color/white"
+            android:textSize="@dimen/drawer_textview_size" />
+
+        <customfonts.textview_fira_sans_regular
+            android:id="@+id/apply_here_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="@dimen/_8sdp"
+            android:text="@string/psychic_apply_here"
+            android:textColor="@color/white"
+            android:textSize="@dimen/drawer_textview_size" />
+
+        <customfonts.textview_fira_sans_regular
+            android:id="@+id/our_website_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="@dimen/_8sdp"
+            android:text="@string/our_website"
+            android:textColor="@color/white"
+            android:textSize="@dimen/drawer_textview_size" />
+
+        <customfonts.textview_fira_sans_regular
+            android:id="@+id/setting_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="@dimen/_8sdp"
+            android:text="@string/settings"
+            android:textColor="@color/white"
+            android:textSize="@dimen/drawer_textview_size" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="#0074CD"></View>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/logout_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_gravity="bottom"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:gravity="center"
+            android:text="Logout"
+            android:textColor="#0074CD"
+            android:textSize="@dimen/drawer_textview_size" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@+id/btnLogin"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_logout"
+            android:tint="@color/blue" />
+
+    </RelativeLayout>
+
+</LinearLayout>
+

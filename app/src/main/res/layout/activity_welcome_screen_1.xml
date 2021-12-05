@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view_welcome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_40sdp"
+            android:backgroundTint="#363636"
+            card_view:cardCornerRadius="8dp"
+            card_view:cardElevation="1dp"
+            card_view:cardMaxElevation="1dp"
+            card_view:cardPreventCornerOverlap="false"
+            card_view:cardUseCompatPadding="true"
+            card_view:contentPadding="@dimen/_10sdp"
+
+            >
+
+            <!--   Recycler View Item Row   -->
+            <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="@dimen/_200sdp"
+                    android:layout_height="@dimen/_200sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="8dp"
+                    android:src="@drawable/tsylogo" />
+
+                <customfonts.textview_fira_sans_bold
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="6dp"
+                    android:text="@string/main_titles"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_25sdp"
+                    android:textStyle="bold" />
+
+                <customfonts.textview_fira_sans_light
+                    android:id="@+id/description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/main_description"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_15sdp" />
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</RelativeLayout>

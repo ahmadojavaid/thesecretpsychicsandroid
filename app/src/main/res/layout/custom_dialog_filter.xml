@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp">
+
+        <customfonts.textview_fira_sans_bold
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/filter_by"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp" />
+
+        <ImageView
+            android:id="@+id/ic_close"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/_14sdp"
+            android:src="@drawable/ic_close"
+            android:tint="@color/blue" />
+
+        <ImageView
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:visibility="gone"
+            android:layout_alignParentLeft="true"
+            android:padding="@dimen/_12sdp"
+            android:src="@drawable/tick_icon" />
+
+        <!--<View-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="@dimen/_1sdp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:background="@color/blue" />-->
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <customfonts.textview_fira_sans_regular
+            android:id="@+id/online_users_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/vide_msg_btn_gray"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/online"
+            android:textSize="@dimen/et_text_size" />
+
+        <customfonts.textview_fira_sans_regular
+            android:id="@+id/offline_users_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/live_btn_gray"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/offline"
+            android:textSize="@dimen/et_text_size" />
+
+        <customfonts.textview_fira_sans_regular
+            android:id="@+id/both_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/both_btn_blue"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/both"
+            android:textColor="@color/white"
+            android:textSize="@dimen/et_text_size" />
+
+    </LinearLayout>
+
+
+    <customfonts.textview_fira_sans_regular
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/price_range_per_min"
+        android:textSize="@dimen/et_text_size" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <customfonts.textview_fira_sans_regular
+            android:id="@+id/low_valueTv"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="0"
+            android:textSize="@dimen/_14sdp" />
+
+        <com.crystal.crystalrangeseekbar.widgets.CrystalRangeSeekbar
+            android:id="@+id/rangeSeekbar1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/high_value_tv"
+            android:layout_toRightOf="@+id/low_valueTv" />
+
+        <customfonts.textview_fira_sans_regular
+            android:id="@+id/high_value_tv"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="100"
+            android:textSize="@dimen/_14sdp" />
+
+    </RelativeLayout>
+
+    <customfonts.textview_fira_sans_regular
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/no_of_reviews"
+        android:textSize="@dimen/et_text_size" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="4">
+
+        <customfonts.textview_fira_sans_regular
+            android:id="@+id/zero_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/video_msg_btn_blue"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/zero"
+            android:textColor="@color/whitess"
+            android:textSize="@dimen/et_text_size" />
+
+        <customfonts.textview_fira_sans_regular
+            android:id="@+id/ten_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/live_btn_gray"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/ten"
+            android:textSize="@dimen/et_text_size" />
+
+        <customfonts.textview_fira_sans_regular
+            android:id="@+id/hundred_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/live_btn_gray"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/hundred"
+            android:textSize="@dimen/et_text_size" />
+
+        <customfonts.textview_fira_sans_regular
+            android:id="@+id/five_hundred_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/both_btn_gray"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/five_hundred"
+            android:textSize="@dimen/et_text_size" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <customfonts.textview_fira_sans_regular
+            android:id="@+id/low_reviews_tv"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="0"
+            android:textSize="@dimen/_14sdp" />
+
+        <com.crystal.crystalrangeseekbar.widgets.CrystalRangeSeekbar
+            android:id="@+id/rangeSeekbarReviews"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/high_reviews_tv"
+            android:layout_toRightOf="@+id/low_reviews_tv" />
+
+        <customfonts.textview_fira_sans_regular
+            android:id="@+id/high_reviews_tv"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="100+"
+            android:textSize="@dimen/_14sdp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:visibility="gone">
+
+
+        <customfonts.textview_fira_sans_regular
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:gravity="center"
+            android:text="@string/include_offline_advisors"
+            android:textSize="@dimen/_12sdp" />
+
+
+        <android.support.v7.widget.SwitchCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:checked="false"
+            android:theme="@style/SCBSwitch" />
+    </RelativeLayout>
+
+
+    <customfonts.textview_fira_sans_regular
+        android:id="@+id/search_tv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@drawable/rounded_green"
+        android:gravity="center"
+        android:text="@string/search"
+        android:textColor="@color/whitess"
+        android:textSize="@dimen/_14sdp" />
+
+</LinearLayout>

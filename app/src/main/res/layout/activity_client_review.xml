@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whitess"
+    android:orientation="vertical"
+    tools:context=".ClientActivities.ClientReviewActivity">
+
+
+    <include layout="@layout/toolbar_with_back_black" />
+
+
+    <customfonts.textview_fira_sans_regular
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:singleLine="true"
+        android:text="@string/feedback_and_review"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="bold" />
+
+
+    <customfonts.textview_fira_sans_regular
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+
+        android:text="@string/review_my_service"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15sdp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:gravity="center">
+
+        <RatingBar
+            android:id="@+id/rattingBar"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:progress="4"
+            android:stepSize="1"
+            android:theme="@style/RatingBar"
+
+            />
+
+
+    </LinearLayout>
+
+    <customfonts.textview_fira_sans_regular
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:text="@string/feedback_with_colon"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15sdp" />
+
+
+    <customfonts.edittext_fira_sans_regular
+
+        android:id="@+id/review_et"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_160sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:background="@drawable/edittext_login"
+        android:gravity="left"
+        android:hint="@string/enter_feedback"
+        android:imeOptions="actionDone"
+        android:inputType="textMultiLine"
+        android:padding="@dimen/_8sdp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/border_color"
+        android:textSize="@dimen/_14sdp" />
+
+
+    <customfonts.textview_fira_sans_regular
+        android:id="@+id/submit_ratting_tv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:background="@drawable/rounded_blue"
+
+        android:gravity="center"
+        android:text="@string/submit"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_14sdp" />
+
+
+</LinearLayout>

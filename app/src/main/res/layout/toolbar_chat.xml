@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/action_bar_height"
+    android:background="@color/black"
+    android:elevation="2dp">
+
+    <ImageView
+        android:id="@+id/back_img"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:padding="@dimen/_15sdp"
+        android:src="@drawable/ic_back"
+        android:tint="@color/whitess" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/back_img"
+        android:gravity="center">
+
+
+    </LinearLayout>
+
+    <customfonts.textview_fira_sans_regular
+        android:id="@+id/toolbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="asdasd"
+        android:textColor="@color/whitess"
+        android:textSize="@dimen/action_bar_text_size"
+        android:textStyle="bold" />
+
+    <FrameLayout
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/toolbar_title">
+
+        <ImageView
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:padding="@dimen/_3sdp"
+            android:id="@+id/userImageView"
+            android:src="@drawable/user_image_general_info"
+            android:visibility="visible" />
+
+        <ImageView
+            android:layout_width="@dimen/_10sdp"
+            android:id="@+id/online_img"
+            android:layout_height="@dimen/_10sdp"
+            android:layout_gravity="bottom|left"
+            android:layout_margin="@dimen/_10sdp"
+            android:src="@drawable/circle_online_chat_green" />
+
+
+    </FrameLayout>
+
+
+</RelativeLayout>

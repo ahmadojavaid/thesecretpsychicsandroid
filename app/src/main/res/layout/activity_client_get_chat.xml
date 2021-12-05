@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".ClientActivities.Chat.ClientGetChat">
+
+    <include layout="@layout/toolbar_with_back_black_chat" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/sendMsgContainer"
+            android:scrollbars="vertical" />
+
+
+        <RelativeLayout
+            android:id="@+id/sendMsgContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/whitess"
+            android:gravity="center">
+
+
+            <customfonts.edittext_fira_sans_regular
+                android:id="@+id/send_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/send_tv"
+                android:background="@null"
+                android:hint="Enter msg"
+                android:imeOptions="actionDone"
+                android:inputType="textMultiLine"
+                android:maxHeight="@dimen/_40sdp"
+                android:maxLines="3"
+                android:minHeight="@dimen/_40sdp"
+                android:padding="@dimen/_8sdp"
+                android:text=""
+                android:textSize="@dimen/_13sdp" />
+
+            <customfonts.textview_fira_sans_regular
+                android:id="@+id/send_tv"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:maxHeight="@dimen/_40sdp"
+                android:minHeight="@dimen/_40sdp"
+                android:text="@string/send"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/_12sdp" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp">
+
+        <ImageView
+            android:id="@+id/userImage"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:src="@drawable/user_image_placeholder" />
+
+
+        <RelativeLayout
+            android:id="@+id/nameContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/userImage">
+
+            <customfonts.textview_fira_sans_regular
+                android:id="@+id/userName_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:text=""
+                android:textSize="@dimen/_14sdp" />
+
+
+            <customfonts.textview_fira_sans_regular
+                android:id="@+id/chat_counter_tv"
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="@dimen/_10sdp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:background="@drawable/circle_pure_red"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="@dimen/_9sdp" />
+
+
+        </RelativeLayout>
+
+
+        <customfonts.textview_fira_sans_regular
+            android:id="@+id/body_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nameContainer"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_toRightOf="@+id/userImage"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text=""
+            android:textSize="@dimen/_12sdp" />
+
+        <customfonts.textview_fira_sans_regular
+            android:id="@+id/date_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/body_tv"
+            android:layout_alignParentRight="true"
+            android:singleLine="true"
+            android:text=""
+            android:textSize="@dimen/_12sdp" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
